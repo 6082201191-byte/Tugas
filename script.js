@@ -1,5 +1,5 @@
 'use strict';
-const categoryPhotos={"Yoga": "images/yoga.jpg", "Meditasi": "images/meditasi.jpg", "Pilates": "images/pilates.jpg", "Latihan kekuatan": "images/latihan-kekuatan.jpg", "Jalan santai": "images/jalan-santai.jpg", "Journaling": "images/journaling.jpg"};
+const categoryPhotos={"Yoga": "yoga.jpg", "Meditasi": "meditasi.jpg", "Pilates": "pilates.jpg", "Latihan kekuatan": "latihan-kekuatan.jpg", "Jalan santai": "jalan-santai.jpg", "Journaling": "journaling.jpg"};
 function photoHTML(category,extra='',loading='lazy'){return `<img class="category-photo ${extra}" src="${categoryPhotos[category]}" alt="${escapeHTML(category)} — foto ilustrasi aktivitas" loading="${loading}" decoding="async">`}
 const $=id=>document.getElementById(id);
 const KEY='wellnest-interaktif-v2';
